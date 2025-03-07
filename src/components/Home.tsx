@@ -5,7 +5,7 @@ const Home = () => {
     <section className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-[#000000] text-center py-9 px-4 text-[#CEC2FF]">
       <div className="mb-8 md:mb-0 md:w-1/3 flex justify-center">
         <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQG8ukeKFxuN-A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721599351343?e=1744243200&v=beta&t=RgaohKY0PjJ3JDmAIfvTpx_onpnfIjTQzsezlB0yiqQ"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQFDHY5D1g2q6A/profile-displayphoto-shrink_400_400/B4DZVO3V7rHYAg-/0/1740784887223?e=1746662400&v=beta&t=UzdZGwkyF6qIi3seeNR_2AJzA6x4xnxZXNYWUp6xHOA"
           alt="Daffne Dev"
           className="rounded-full w-56 h-56 md:w-80 md:h-80 object-cover border-4 border-[#4F6D7A]"
         />
