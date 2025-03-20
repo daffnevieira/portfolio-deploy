@@ -1,9 +1,8 @@
-import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-[#CEC2FF] text-zinc-950 py-16 px-4">
+    <section id="contact" className="bg-[#dfdde4] text-zinc-950 py-16 px-4">
       <div className="container mx-auto text-center max-w-4xl">
         <h2 className="text-4xl font-bold mb-8">Contato</h2>
         <p className="text-lg mb-12 px-4">

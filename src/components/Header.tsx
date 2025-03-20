@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -15,7 +14,7 @@ const Header = () => {
         >
           {menuOpen ? (
             <svg
-              className="w-6 h-6"
+              className="h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

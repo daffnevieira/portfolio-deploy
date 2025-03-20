@@ -1,8 +1,6 @@
-import React from 'react';
-
 const About = () => {
   return (
-    <section id="about" className="bg-[#CEC2FF] py-16">
+    <section id="about" className="bg-[#dfdde4] py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-[#333333] mb-6">Sobre mim</h2>
         <p className="text-lg text-[#333333] text-center max-w-3xl mx-auto mb-4">
@@ -17,7 +15,7 @@ const About = () => {
         <div className="mt-8 text-center">
           <a
             href="#contact"
-            className="inline-block py-3 px-8 bg-[#FF34CC] text-white text-lg font-bold rounded-2xl shadow-lg hover:bg-[#A8007E] transition duration-300"
+            className="inline-block py-3 px-8 bg-[#82299b] text-white text-lg font-bold rounded-2xl shadow-lg hover:bg-[#A8007E] transition duration-300"
           >
              Vamos criar algo incrível juntos?
           </a>

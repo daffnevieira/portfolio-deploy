@@ -1,4 +1,3 @@
-import React from 'react';
 import login from '../assets/projetos/login.png'
 import fittech from '../assets/projetos/fittech.webp'
 import pizzaria from '../assets/projetos/pizzaria.png'
@@ -14,13 +13,13 @@ const projects = [
     title: 'Sistema Blog Pessoal',
     description: 'Desenvolvido com as Tecnologias Java SpringBoot, Mysql, React, TypeScript e TailwindCSS.',
     github: 'https://github.com/daffnevieira/blogpessoal',
-    liveDemo: 'https://sistema-de-corridas.vercel.app',
     image: blog
   },
   {
     title: 'Sistema FitTech',
     description: 'Desenvolvido em equipe no Bootcamp da Generation, onde atuei desde o desenvolvimento back-end com Java SpringBoot e Mysql até o front com React, TypeScript e Tailwind.',
     github: 'https://github.com/Projeto-Integrador-Grupo-3/fittech_frontend',
+    demo: 'https://fittech-frontend.netlify.app/',
     image: fittech
   },
   {
@@ -33,7 +32,6 @@ const projects = [
     title: 'Sistema de Login',
     description: 'Sistema de Login desenvolvido com Node.js, Mysql, HTML e CSS na estilização.',
     github: 'https://github.com/daffnevieira/mongooseAuth',
-    liveDemo: '',
     image: login
   },
 ];
@@ -46,12 +44,11 @@ const Projetos = () => {
         <p className="text-lg mb-12 text-white">
           Aqui estão alguns dos projetos que desenvolvi, utilizando diversas tecnologias.
         </p>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#CEC2FF] rounded-3xl shadow-2xl transform hover:scale-105 hover:shadow-2xl transition duration-500"
+              className="bg-[#f8e6ff] rounded-3xl shadow-2xl transform hover:scale-105 hover:shadow-2xl transition duration-500"
             >
               <div className="p-6">
                 
@@ -69,20 +66,20 @@ const Projetos = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-[#FF34CC] text-white rounded-full hover:bg-[#A8007E] transition duration-300"
+                    className="px-6 py-3 bg-[#82299b] text-white rounded-full hover:bg-[#A8007E] transition duration-300"
                   >
                     GitHub
                   </a>
-                  {project.liveDemo && (
+                   {project.demo && (
                     <a
-                      href={project.liveDemo}
+                      href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-indigo-700 text-white rounded-full hover:bg-sky-900 transition duration-300"
                     >
                       Demo
                     </a>
-                  )}
+                  )} 
                 </div>
               </div>
             </div>
