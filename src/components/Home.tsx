@@ -4,6 +4,7 @@ const Home = () => {
       <div className="mb-8 md:mb-0 md:w-1/3 flex justify-center">
         <img
           src="https://media.licdn.com/dms/image/v2/D4D03AQFDHY5D1g2q6A/profile-displayphoto-shrink_400_400/B4DZVO3V7rHYAg-/0/1740784887223?e=1747872000&v=beta&t=P3StenYw3pleimH4F8CH1YcpBsvD2uZf7v0HmyPZ4Uo"
+
           alt="Daffne Dev"
           className="rounded-full w-56 h-56 md:w-80 md:h-80 object-cover border-4 border-[#4F6D7A]"
         />
