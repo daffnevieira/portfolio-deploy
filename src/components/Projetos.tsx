@@ -11,26 +11,26 @@ const projects = [
   },
   {
     title: 'Sistema Blog Pessoal',
-    description: 'Desenvolvido com as Tecnologias Java SpringBoot, Mysql, React, TypeScript e TailwindCSS.',
+    description: 'Blog criado com Java SpringBoot, MySQL, React, TypeScript e TailwindCSS.',
     github: 'https://github.com/daffnevieira/blogpessoal',
     image: blog
   },
   {
     title: 'Sistema FitTech',
-    description: 'Desenvolvido em equipe no Bootcamp da Generation, onde atuei desde o desenvolvimento back-end com Java SpringBoot e Mysql até o front com React, TypeScript e Tailwind.',
+    description: 'Projeto em equipe no bootcamp Generation. Atuei no back-end e front-end.',
     github: 'https://github.com/Projeto-Integrador-Grupo-3/fittech_frontend',
     demo: 'https://fittech-frontend.netlify.app/',
     image: fittech
   },
   {
     title: 'Sistema de Pizzaria',
-    description: 'Sistema desenvolvido com HTML, CSS e JS no front, e Node.js e Mysql no back-end.',
+    description: 'Sistema simples com Node.js, MySQL, HTML e JS.',
     github: 'https://github.com/daffnevieira/pizzaria',
     image: pizzaria
   },
   {
     title: 'Sistema de Login',
-    description: 'Sistema de Login desenvolvido com Node.js, Mysql, HTML e CSS na estilização.',
+    description: 'Autenticação com Node.js, MySQL, HTML e CSS.',
     github: 'https://github.com/daffnevieira/mongooseAuth',
     image: login
   },
@@ -38,48 +38,50 @@ const projects = [
 
 const Projetos = () => {
   return (
-    <section id="projects" className="bg-[#000000] py-16 px-4">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8 text-white">Projetos</h2>
-        <p className="text-lg mb-12 text-white">
-          Aqui estão alguns dos projetos que desenvolvi, utilizando diversas tecnologias.
+    <section id="projects" className="bg-black py-16 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4 text-[#d16cff]">Projetos</h2>
+        <p className="text-base text-gray-300 mb-12">
+          Alguns dos meus projetos favoritos, onde apliquei minha criatividade, lógica e todo meu aprendizado!
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#f8e6ff] rounded-3xl shadow-2xl transform hover:scale-105 hover:shadow-2xl transition duration-500"
+              className="bg-[#1a1a1a] rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col"
             >
-              <div className="p-6">
-                
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-2xl font-semibold text-[#000000] mb-4">{project.title}</h3>
-              
-                <p className="text-gray-700 mb-6">{project.description}</p>
-
-                <div className="flex justify-center space-x-6 mt-6">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 bg-[#82299b] text-white rounded-full hover:bg-[#A8007E] transition duration-300"
-                  >
-                    GitHub
-                  </a>
-                   {project.demo && (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-36 object-cover"
+              />
+              <div className="p-4 flex flex-col flex-1 justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-[#CEC2FF] mb-2">{project.title}</h3>
+                  <p className="text-sm text-gray-300">{project.description}</p>
+                </div>
+                <div className="flex gap-2 mt-4 justify-center">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-1.5 bg-[#82299b] text-white text-sm rounded-full hover:bg-[#A8007E] transition"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-6 py-3 bg-indigo-700 text-white rounded-full hover:bg-sky-900 transition duration-300"
+                      className="px-4 py-1.5 bg-indigo-600 text-white text-sm rounded-full hover:bg-indigo-800 transition"
                     >
                       Demo
                     </a>
-                  )} 
+                  )}
                 </div>
               </div>
             </div>

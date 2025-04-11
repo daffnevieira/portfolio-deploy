@@ -1,35 +1,39 @@
+import { FaLinkedin, FaFileAlt } from "react-icons/fa";
+
 const Home = () => {
   return (
-    <section className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-[#000000] text-center py-9 px-4 text-[#9c31b9]">
-      <div className="mb-8 md:mb-0 md:w-1/3 flex justify-center">
+    <section className="min-h-screen w-full bg-black text-[#E3A7FF] px-6 py-16 flex flex-col md:flex-row items-center justify-center md:gap-12 lg:gap-8 xl:gap-6">
+      <div className="w-full md:w-[30%] flex justify-center animate-fade-in">
         <img
           src="https://media.licdn.com/dms/image/v2/D4D03AQFDHY5D1g2q6A/profile-displayphoto-shrink_400_400/B4DZVO3V7rHYAg-/0/1740784887223?e=1747872000&v=beta&t=P3StenYw3pleimH4F8CH1YcpBsvD2uZf7v0HmyPZ4Uo"
-
           alt="Daffne Dev"
-          className="rounded-full w-56 h-56 md:w-80 md:h-80 object-cover border-4 border-[#4F6D7A]"
+          className="rounded-full w-44 h-44 sm:w-64 sm:h-64 object-cover border-4 border-[#A84CC6] shadow-xl hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <div className="md:w-2/3 md:ml-8 w-full max-w-screen-lg">
-        <h1 className="text-6xl md:text-4xl font-bold mb-4">Olá, eu sou a Daffne!</h1>
-        <h2 className="text-xl md:text-2xl mb-6">
-          <span className="block">Bem-vindo ao meu portfólio!</span>
-        </h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      <div className="w-full md:w-[70%] max-w-3xl text-center md:text-left animate-slide-up">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-white leading-snug">
+          Olá, eu sou <span className="text-[#d16cff]">Daffne</span>
+        </h1>
+        <p className="text-base sm:text-lg text-[#c39edb] mb-8 max-w-xl">
+          Seja bem-vindo ao meu universo tech! Aqui compartilho projetos, aprendizados e minha evolução como desenvolvedora de software.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a
             href="https://www.linkedin.com/in/daffne-vieira/"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2 px-6 bg-[#82299b] text-white font-semibold rounded-lg hover:bg-[#A8007E] transition duration-300"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#82299b] text-white rounded-full font-medium hover:bg-[#A8007E] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            LinkedIn
+            <FaLinkedin size={20} /> LinkedIn
           </a>
           <a
-            href="https://docs.google.com/document/d/18uZ0cM-koKYgg6bQxEi3yX35L5qRYVLf/edit?usp=sharing&ouid=103991299677459177453&rtpof=true&sd=true"
+            href="https://docs.google.com/document/d/18uZ0cM-koKYgg6bQxEi3yX35L5qRYVLf/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2 px-6 bg-[#82299b] text-white font-semibold rounded-lg hover:bg-[#A8007E] transition duration-300"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#82299b] text-white rounded-full font-medium hover:bg-[#A8007E] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Currículo
+            <FaFileAlt size={20} /> Currículo
           </a>
         </div>
       </div>
