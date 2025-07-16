@@ -3,13 +3,13 @@ import { FaLinkedin, FaFileAlt } from "react-icons/fa";
 const Home = () => {
   return (
     <section className="min-h-screen w-full bg-black text-[#E3A7FF] px-6 py-16 flex flex-col md:flex-row items-center justify-center md:gap-12 lg:gap-8 xl:gap-6">
-      <div className="w-full md:w-[30%] flex justify-center animate-fade-in">
+{/*       <div className="w-full md:w-[30%] flex justify-center animate-fade-in">
         <img
           src="https://media.licdn.com/dms/image/v2/D4D03AQFDHY5D1g2q6A/profile-displayphoto-shrink_400_400/B4DZVO3V7rHYAg-/0/1740784887223?e=1747872000&v=beta&t=P3StenYw3pleimH4F8CH1YcpBsvD2uZf7v0HmyPZ4Uo"
           alt="Daffne Dev"
           className="rounded-full w-44 h-44 sm:w-64 sm:h-64 object-cover border-4 border-[#A84CC6] shadow-xl hover:scale-105 transition-transform duration-300"
         />
-      </div>
+      </div> */}
       <div className="w-full md:w-[70%] max-w-3xl text-center md:text-left animate-slide-up">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-white leading-snug">
           Olá, eu sou <span className="text-[#d16cff]">Daffne</span>
